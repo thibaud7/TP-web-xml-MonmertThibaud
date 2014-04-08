@@ -14,6 +14,10 @@ public class CV {
     private List<Competence> competences;
     private List<Langue> langues;
 
+    public CV() {
+        age = 44;
+
+    }
 
     public int getAge() {
         return age;
