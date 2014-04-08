@@ -12,11 +12,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/cv")
 public class CVController {
-    @RequestMapping(value="{firstName}", method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     public @ResponseBody
     CV getResumeInXML(@PathVariable String firstName) {
 
         CV resume = new CV();
+        resume.setPrenom("Thibaud");
+        resume.setNom("Monmert");
 
         return resume;
 
