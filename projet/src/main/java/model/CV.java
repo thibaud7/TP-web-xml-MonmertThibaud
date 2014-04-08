@@ -1,10 +1,12 @@
 package model;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 /**
  * Created by Thibaud on 08/04/2014.
  */
+@XmlRootElement(name = "cv")
 public class CV {
     private int age;
     private String nom;
