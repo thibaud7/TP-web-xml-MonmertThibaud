@@ -2,6 +2,7 @@ package model;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,7 +14,7 @@ public class CVList {
         private List<CV> list;
 
         public CVList() {
-
+            list = new ArrayList<CV>();
         }
 
         public CVList(List<CV> l) {

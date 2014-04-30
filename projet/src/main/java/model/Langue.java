@@ -9,7 +9,8 @@ public class Langue {
     private int pourcentage;
 
     Langue() {
-
+        intitule = new String();
+        pourcentage = 50;
     }
 
     public String getIntitule() {

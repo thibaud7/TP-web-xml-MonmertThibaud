@@ -13,12 +13,27 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/cv")
 public class CVController {
 
+    private static CVList cvlist;
+
+    static {
+        cvlist = new CVList();
+        CV cv1 = new CV();
+        cv1.setPrenom("Wilson");
+        cv1.setNom("Churchil");
+        cvlist.add(cv1);
+        CV cv2 = new CV();
+        cv2.setPrenom("Cristiano");
+        cv2.setNom("Ronaldo");
+        cvlist.add(cv2);
+    }
+
+    public CVController() {
+
+    }
+
     @RequestMapping(method = RequestMethod.GET)
     public @ResponseBody
-    CV getResumeInXML() {
-        CV resume = new CV();
-        resume.setPrenom("Thibaud");
-        resume.setNom("Monmert");
-        return resume;
+    CVList getResumeInXML() {
+        return cvlist;
     }
 }

@@ -4,6 +4,14 @@ package model;
  * Created by Thibaud on 08/04/2014.
  */
 public class Formation {
+
+    public Formation() {
+        lieu = new String();
+        nom = new String();
+        anneeDebut = 1990;
+        anneeFin = 2014;
+    }
+
     public String getLieu() {
         return lieu;
     }
@@ -20,24 +28,24 @@ public class Formation {
         this.nom = nom;
     }
 
-    public Date getAnneeDebut() {
+    public int getAnneeDebut() {
         return anneeDebut;
     }
 
-    public void setAnneeDebut(Date anneeDebut) {
+    public void setAnneeDebut(int anneeDebut) {
         this.anneeDebut = anneeDebut;
     }
 
-    public Date getAnneeFin() {
+    public int getAnneeFin() {
         return anneeFin;
     }
 
-    public void setAnneeFin(Date anneeFin) {
+    public void setAnneeFin(int anneeFin) {
         this.anneeFin = anneeFin;
     }
 
     private String lieu;
     private String nom;
-    private Date anneeDebut;
-    private Date anneeFin;
+    private int anneeDebut;
+    private int anneeFin;
 }

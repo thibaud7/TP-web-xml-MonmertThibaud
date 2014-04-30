@@ -1,6 +1,7 @@
 package model;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,6 +18,12 @@ public class CV {
     private List<Langue> langues;
 
     public CV() {
+        nom = "";
+        prenom = "";
+        metier = "";
+        formations = new ArrayList<Formation>();
+        competences = new ArrayList<Competence>();
+        langues = new ArrayList<Langue>();
     }
 
     public int getAge() {
