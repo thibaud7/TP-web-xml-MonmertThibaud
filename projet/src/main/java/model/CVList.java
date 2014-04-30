@@ -8,10 +8,11 @@ import java.util.List;
 /**
  * Created by Thibaud on 08/04/2014.
  */
-@XmlRootElement(name = "resumes")
+@XmlRootElement(name = "allcv")
 public class CVList {
 
-        private List<CV> list;
+        @XmlElement(name = "cv")
+        protected List<CV> list;
 
         public CVList() {
             list = new ArrayList<CV>();

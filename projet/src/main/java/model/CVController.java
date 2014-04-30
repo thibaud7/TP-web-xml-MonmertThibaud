@@ -32,8 +32,7 @@ public class CVController {
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public @ResponseBody
-    CVList getResumeInXML() {
+    public @ResponseBody CVList getResumeInXML() {
         return cvlist;
     }
 }
