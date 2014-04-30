@@ -21,6 +21,8 @@ public class CVController {
         CV cv2 = new CV();
         cv2.setPrenom("Cristiano");
         cv2.setNom("Ronaldo");
+        cv2.setAge(28);
+        cv2.setMetier("Footballeur");
         cvlist.add(cv2);
     }
 
@@ -34,6 +36,10 @@ public class CVController {
         return cv;
     }
 
+    @RequestMapping(value="/{id}", method = RequestMethod.GET)
+    public @ResponseBody CV getCVInXML(@PathVariable int id) {
+        return cvlist.getCV(id);
+    }
 
     @RequestMapping(method = RequestMethod.GET)
     public @ResponseBody CVList getResumeInXML() {

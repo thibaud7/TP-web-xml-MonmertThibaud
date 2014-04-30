@@ -22,6 +22,15 @@ public class CVList {
             this.list = l;
         }
 
+        public CV getCV(int num) {
+            for (CV cv : list) {
+                if (cv.getId() == num) {
+                    return cv;
+                }
+            }
+            return new CV();
+        }
+
         public void add(CV r) {
             this.list.add(r);
         }
