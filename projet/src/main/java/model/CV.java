@@ -9,6 +9,8 @@ import java.util.List;
  */
 @XmlRootElement(name = "cv")
 public class CV {
+    static int numCreation;
+    private int id;
     private int age;
     private String nom;
     private String prenom;
@@ -18,6 +20,8 @@ public class CV {
     private List<Langue> langues;
 
     public CV() {
+        numCreation++;
+        id = numCreation;
         nom = "";
         prenom = "";
         metier = "";
@@ -82,5 +86,12 @@ public class CV {
         this.langues = langues;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
 }

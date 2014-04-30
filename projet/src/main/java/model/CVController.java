@@ -1,10 +1,7 @@
 package model;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by Thibaud on 08/04/2014.
@@ -30,6 +27,13 @@ public class CVController {
     public CVController() {
 
     }
+
+    @RequestMapping(method = RequestMethod.PUT)
+    public @ResponseBody CV putCVInXML(@RequestBody CV cv) {
+        cvlist.add(cv);
+        return cv;
+    }
+
 
     @RequestMapping(method = RequestMethod.GET)
     public @ResponseBody CVList getResumeInXML() {
