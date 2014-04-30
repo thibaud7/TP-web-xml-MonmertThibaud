@@ -22,15 +22,6 @@ public class CVList {
             this.list = l;
         }
 
-        public List<CV> getList() {
-            return list;
-        }
-
-        @XmlElement
-        public void setList(List<CV> l) {
-            this.list = l;
-        }
-
         @XmlElement
         public void add(CV r) {
             this.list.add(r);
