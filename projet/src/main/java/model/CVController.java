@@ -23,6 +23,17 @@ public class CVController {
         cv2.setNom("Ronaldo");
         cv2.setAge(28);
         cv2.setMetier("Footballeur");
+        Formation f = new Formation();
+        f.setNom("Universite");
+        f.setLieu("Rouen");
+        f.setAnneeDebut(1992);
+        f.setAnneeFin(2000);
+        cv2.getFormations().add(f);
+        Competence c = new Competence();
+        c.setNomCompetence("Orthographe");
+        c.setPourcentage(80);
+        cv2.getCompetences().add(c);
+        cv2.getCompetences().add(c);
         cvlist.add(cv2);
     }
 
