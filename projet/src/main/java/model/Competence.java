@@ -1,10 +1,13 @@
 package model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Created by Thibaud on 08/04/2014.
  */
+@XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "competence")
 public class Competence {
 
