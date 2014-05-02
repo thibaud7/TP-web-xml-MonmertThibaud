@@ -19,14 +19,6 @@ public class CV {
     private String prenom;
     private String metier;
 
-    public List<String> getFormations() {
-        return formations;
-    }
-
-    public void setFormations(List<String> formations) {
-        this.formations = formations;
-    }
-
     @XmlElementWrapper(name = "formations")
     @XmlElement(name = "formation")
     protected List<String> formations;
