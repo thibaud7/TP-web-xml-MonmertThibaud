@@ -1,7 +1,9 @@
 package model;
 
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,8 +19,13 @@ public class CV {
     private String prenom;
     private String metier;
     @XmlElementWrapper(name = "formations")
+    @XmlElement(name = "formation")
     private List<Formation> formations;
+    @XmlElementWrapper(name = "competences")
+    @XmlElement(name = "competence")
     private List<Competence> competences;
+    @XmlElementWrapper(name = "langues")
+    @XmlElement(name = "langue")
     private List<Langue> langues;
 
     public CV() {
@@ -28,6 +35,8 @@ public class CV {
         prenom = "";
         metier = "";
         formations = new ArrayList<Formation>();
+        Formation f = new Formation();
+        formations.add(f);
         competences = new ArrayList<Competence>();
         langues = new ArrayList<Langue>();
     }
