@@ -28,12 +28,9 @@ public class CVController {
         f.setLieu("Rouen");
         f.setAnneeDebut(1992);
         f.setAnneeFin(2000);
-        cv2.getFormations().add(f);
         Competence c = new Competence();
         c.setNomCompetence("Orthographe");
         c.setPourcentage(80);
-        cv2.getCompetences().add(c);
-        cv2.getCompetences().add(c);
         cvlist.add(cv2);
     }
 
