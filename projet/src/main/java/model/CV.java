@@ -26,12 +26,7 @@ public class CV {
         prenom = "";
         metier = "";
         formations = new ArrayList<Formation>();
-
         competences = new ArrayList<Competence>();
-        Competence c = new Competence();
-        c.setNomCompetence("Orthographe");
-        c.setPourcentage(80);
-        competences.add(c);
         langues = new ArrayList<Langue>();
     }
 
