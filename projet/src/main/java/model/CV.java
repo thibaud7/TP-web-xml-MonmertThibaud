@@ -1,5 +1,6 @@
 package model;
 
+import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +16,7 @@ public class CV {
     private String nom;
     private String prenom;
     private String metier;
+    @XmlElementWrapper(name = "formations")
     private List<Formation> formations;
     private List<Competence> competences;
     private List<Langue> langues;
