@@ -18,9 +18,18 @@ public class CV {
     private String nom;
     private String prenom;
     private String metier;
+
+    public List<String> getFormations() {
+        return formations;
+    }
+
+    public void setFormations(List<String> formations) {
+        this.formations = formations;
+    }
+
     @XmlElementWrapper(name = "formations")
     @XmlElement(name = "formation")
-    protected List<Formation> formations;
+    protected List<String> formations;
     @XmlElementWrapper(name = "competences")
     @XmlElement(name = "competence")
     protected List<Competence> competences;
@@ -34,9 +43,9 @@ public class CV {
         nom = "";
         prenom = "";
         metier = "";
-        formations = new ArrayList<Formation>();
+        formations = new ArrayList<String>();
         Formation f = new Formation();
-        formations.add(f);
+        formations.add(new String("Université Rouen "));
         competences = new ArrayList<Competence>();
         Competence c = new Competence();
         competences.add(c);
@@ -83,13 +92,6 @@ public class CV {
         this.metier = metier;
     }
 
-    public List<Formation> getFormations() {
-        return formations;
-    }
-
-    public void setFormations(List<Formation> formations) {
-        this.formations = formations;
-    }
 
     public List<Competence> getCompetences() {
         return competences;
