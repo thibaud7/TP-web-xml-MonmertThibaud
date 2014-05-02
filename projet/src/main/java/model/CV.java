@@ -20,13 +20,13 @@ public class CV {
     private String metier;
     @XmlElementWrapper(name = "formations")
     @XmlElement(name = "formation")
-    private List<Formation> formations;
+    protected List<Formation> formations;
     @XmlElementWrapper(name = "competences")
     @XmlElement(name = "competence")
-    private List<Competence> competences;
+    protected List<Competence> competences;
     @XmlElementWrapper(name = "langues")
     @XmlElement(name = "langue")
-    private List<Langue> langues;
+    protected List<Langue> langues;
 
     public CV() {
         numCreation++;
@@ -38,7 +38,17 @@ public class CV {
         Formation f = new Formation();
         formations.add(f);
         competences = new ArrayList<Competence>();
+        Competence c = new Competence();
+        competences.add(c);
         langues = new ArrayList<Langue>();
+        Langue l = new Langue();
+        l.setIntitule("Anglais");
+        l.setPourcentage(85);
+        langues.add(l);
+        l = new Langue();
+        l.setIntitule("Espagnol");
+        l.setPourcentage(50);
+        langues.add(l);
     }
 
     public int getAge() {
