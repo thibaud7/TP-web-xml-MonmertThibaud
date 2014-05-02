@@ -92,23 +92,6 @@ public class CV {
         this.metier = metier;
     }
 
-
-    public List<Competence> getCompetences() {
-        return competences;
-    }
-
-    public void setCompetences(List<Competence> competences) {
-        this.competences = competences;
-    }
-
-    public List<Langue> getLangues() {
-        return langues;
-    }
-
-    public void setLangues(List<Langue> langues) {
-        this.langues = langues;
-    }
-
     public int getId() {
         return id;
     }
