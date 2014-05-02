@@ -1,8 +1,11 @@
 package model;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Created by Thibaud on 08/04/2014.
  */
+@XmlRootElement(name = "formation")
 public class Formation {
 
     public Formation() {
