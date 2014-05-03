@@ -12,7 +12,7 @@ import java.util.List;
  */
 @XmlRootElement(name = "cv")
 public class CV {
-    public static int numCreation;
+    public static int numCreation = 0;
     private int id;
     private int age;
     private String nom;
@@ -30,7 +30,6 @@ public class CV {
     public List<Langue> langues;
 
     public CV() {
-        numCreation++;
         id = numCreation;
         nom = "";
         prenom = "";
@@ -82,6 +81,14 @@ public class CV {
 
     public void ajouterFormation(Formation f) {
         formations.add(f);
+    }
+
+    public static int getNumCreation() {
+        return numCreation;
+    }
+
+    public static void incrementeNumCreation() {
+        numCreation++;
     }
 
 }

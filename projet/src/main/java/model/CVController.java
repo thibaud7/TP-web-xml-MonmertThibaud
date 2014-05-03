@@ -13,8 +13,8 @@ public class CVController {
     private static CVList cvlist;
 
     static {
-        cvlist = new CVList(); 
-        CV cv2 = new CV();
+        cvlist = new CVList();
+        /*CV cv2 = new CV();
         cv2.setPrenom("Cristiano");
         cv2.setNom("Ronaldo");
         cv2.setAge(28);
@@ -33,7 +33,7 @@ public class CVController {
         l.setIntitule("Anglais");
         l.setPourcentage(85);
         cv2.langues.add(l);
-        cvlist.add(cv2);
+        cvlist.add(cv2);*/
     }
 
     public CVController() {
