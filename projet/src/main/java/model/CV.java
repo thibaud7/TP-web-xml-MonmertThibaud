@@ -36,24 +36,8 @@ public class CV {
         prenom = "";
         metier = "";
         formations = new ArrayList<Formation>();
-        Formation f = new Formation();
-        f.setLieu("Yvetot");
-        f.setNom("College");
-        f.setAnneeFin(1992);
-        f.setAnneeDebut(1990);
-        formations.add(f);
         competences = new ArrayList<Competence>();
-        Competence c = new Competence();
-        competences.add(c);
         langues = new ArrayList<Langue>();
-        Langue l = new Langue();
-        l.setIntitule("Anglais");
-        l.setPourcentage(85);
-        langues.add(l);
-        l = new Langue();
-        l.setIntitule("Espagnol");
-        l.setPourcentage(50);
-        langues.add(l);
     }
 
     public int getAge() {

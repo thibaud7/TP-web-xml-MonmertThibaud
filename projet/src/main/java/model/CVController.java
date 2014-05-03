@@ -14,10 +14,6 @@ public class CVController {
 
     static {
         cvlist = new CVList();
-        CV cv1 = new CV();
-        cv1.setPrenom("Wilson");
-        cv1.setNom("Churchil");
-        cvlist.add(cv1);
         CV cv2 = new CV();
         cv2.setPrenom("Cristiano");
         cv2.setNom("Ronaldo");
@@ -28,9 +24,15 @@ public class CVController {
         f.setLieu("Rouen");
         f.setAnneeDebut(1992);
         f.setAnneeFin(2000);
+        cv2.formations.add(f);
         Competence c = new Competence();
         c.setNomCompetence("Orthographe");
         c.setPourcentage(80);
+        cv2.competences.add(c);
+        Langue l = new Langue();
+        l.setIntitule("Anglais");
+        l.setPourcentage(85);
+        cv2.langues.add(l);
         cvlist.add(cv2);
     }
 
