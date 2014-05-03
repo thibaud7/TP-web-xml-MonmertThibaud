@@ -21,13 +21,13 @@ public class CV {
 
     @XmlElementWrapper(name = "formations")
     @XmlElement(name = "formation")
-    protected List<String> formations;
+    public List<Formation> formations;
     @XmlElementWrapper(name = "competences")
     @XmlElement(name = "competence")
-    protected List<Competence> competences;
+    public List<Competence> competences;
     @XmlElementWrapper(name = "langues")
     @XmlElement(name = "langue")
-    protected List<Langue> langues;
+    public List<Langue> langues;
 
     public CV() {
         numCreation++;
@@ -35,9 +35,13 @@ public class CV {
         nom = "";
         prenom = "";
         metier = "";
-        formations = new ArrayList<String>();
+        formations = new ArrayList<Formation>();
         Formation f = new Formation();
-        formations.add(new String("Université Rouen "));
+        f.setLieu("Yvetot");
+        f.setNom("College");
+        f.setAnneeFin(1992);
+        f.setAnneeDebut(1990);
+        formations.add(f);
         competences = new ArrayList<Competence>();
         Competence c = new Competence();
         competences.add(c);
@@ -90,6 +94,10 @@ public class CV {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public void ajouterFormation(Formation f) {
+        formations.add(f);
     }
 
 }

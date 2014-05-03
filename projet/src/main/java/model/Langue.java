@@ -14,7 +14,7 @@ public class Langue {
     private String intitule;
     private int pourcentage;
 
-    Langue() {
+    public Langue() {
         intitule = new String();
         pourcentage = 50;
     }
