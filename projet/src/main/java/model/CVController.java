@@ -13,7 +13,7 @@ public class CVController {
     private static CVList cvlist;
 
     static {
-        cvlist = new CVList();
+        cvlist = new CVList(); 
         CV cv2 = new CV();
         cv2.setPrenom("Cristiano");
         cv2.setNom("Ronaldo");

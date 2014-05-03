@@ -63,10 +63,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CV.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CV.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/CV.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6155779" vertical-offset="299" max-vertical-offset="1241">
+            <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1241">
               <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -103,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CVController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CVController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/CVController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1003">
-              <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.17085427" vertical-offset="170" max-vertical-offset="1003">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -221,10 +221,10 @@
         <option value="$PROJECT_DIR$/src/main/java/client/FormationClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/client/LangueClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/client/CompetenceClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/CVController.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Competence.java" />
         <option value="$PROJECT_DIR$/src/main/java/client/ClientCV.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/CV.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/CVController.java" />
       </list>
     </option>
   </component>
@@ -1049,14 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/CVController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1003">
-          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/client/ClientCV.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="8721" max-vertical-offset="11135">
@@ -1083,13 +1075,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/CV.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6155779" vertical-offset="299" max-vertical-offset="1241">
+        <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1241">
           <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1801#1802#0" expanded="true" />
             <element signature="e#1834#1835#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/CVController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17085427" vertical-offset="170" max-vertical-offset="1003">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
