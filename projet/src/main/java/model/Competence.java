@@ -11,6 +11,9 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name = "competence")
 public class Competence {
 
+    protected String nomCompetence;
+    protected int pourcentage;
+
     public Competence() {
 
     }
@@ -23,8 +26,6 @@ public class Competence {
         this.nomCompetence = nomCompetence;
     }
 
-    private String nomCompetence;
-
     public int getPourcentage() {
         return pourcentage;
     }
@@ -32,8 +33,5 @@ public class Competence {
     public void setPourcentage(int pourcentage) {
         this.pourcentage = pourcentage;
     }
-
-    private int pourcentage;
-
 
 }
