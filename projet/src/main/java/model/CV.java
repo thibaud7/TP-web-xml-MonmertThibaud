@@ -12,7 +12,7 @@ import java.util.List;
  */
 @XmlRootElement(name = "cv")
 public class CV {
-    static int numCreation;
+    public static int numCreation;
     private int id;
     private int age;
     private String nom;
